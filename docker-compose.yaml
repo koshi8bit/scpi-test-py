@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+    pyyyyy:
+        build: .
+        tty: true
+#        network_mode: 'host'
+        environment:
+            test: 700
+        ports:
+            - "5052:5052"
+        restart: unless-stopped
